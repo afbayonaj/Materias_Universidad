@@ -24,7 +24,7 @@ def registrar_curso(request):
     
     messages.success(request, "¡Curso Registrado!")
     
-    return redirect('/')
+    return redirect('/index')
 
 
 def edicion_curso(request, codigo):
@@ -45,7 +45,7 @@ def editar_curso(request):
 
     messages.success(request, "¡Curso Actualizado!")
 
-    return redirect('/')
+    return redirect('/index')
 
 
 def eliminar_curso(request, codigo):
@@ -54,4 +54,4 @@ def eliminar_curso(request, codigo):
     
     messages.success(request, "¡Curso Eliminado!")
     
-    return redirect('/')
+    return redirect('/index')
