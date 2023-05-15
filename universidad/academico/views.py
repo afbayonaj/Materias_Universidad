@@ -8,7 +8,7 @@ def home(request):
     
     messages.success(request, "¡Cursos Listados!")
     
-    return render(request, "gestion_cursos.html", {"cursos": cursos_listados})
+    return render(request, "index.html", {"cursos": cursos_listados})
 
 
 def registrar_curso(request):
